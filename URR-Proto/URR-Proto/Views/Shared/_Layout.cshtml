@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("head", required: false)
+
+    <link href="~/OmatMuotoilut/Perusmuotoilu.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merienda:700" rel="stylesheet">
+
+</head>
+<body>
+    <header id="header">
+            <img id="logoväri" src="~/OmatKuvat/URR logo-varit-tausta-pakattu.jpg" class="img-fluid"  />
+        <p style="padding-top:5rem;">Usui Reiki Ryoho ry</p>
+    </header>
+    <nav class="navbar navbar-expand-sm">
+        <!-- Tämä rivi tarvitaan, jotta nav-bar toimii !!!! -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="~/Home/Index">Etusivu</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Reiki</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="~/Reiki/Index">Yleistä</a>
+                    <a class="dropdown-item" href="~/Reiki/Historia">Historia</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Usui Reiki Ryoho ry</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

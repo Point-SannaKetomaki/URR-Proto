@@ -1,0 +1,116 @@
+﻿@media screen and (max-width:600px) {
+    header {
+        height: 11rem;
+        text-align: center;
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em red;
+        background-image: url('../OmatKuvat/turn-1336786__480.jpg');
+        opacity: 0.8;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        font-family: 'Merienda', cursive;
+        color: ghostwhite;
+        margin: 0;
+        padding: 0;
+    }
+    .img-fluid {
+        width:100%;
+        max-width: 150px;
+        height: auto;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        float: left;
+    }
+}
+
+@media screen and (min-width:601px) {
+    header {
+        height: 16rem;
+        text-align: center;
+        font-size: 2.25rem;
+        text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em red;
+        background-image: url('../OmatKuvat/turn-1336786__480.jpg');
+        opacity: 0.8;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        font-family: 'Merienda', cursive;
+        color: ghostwhite;
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-fluid {
+        width:100%;
+        max-width: 220px;
+        height: auto;
+        padding-top: 1.1rem;
+        padding-left: 1.1rem;
+        float: left;
+    }
+}
+
+@media screen and (min-width:900px) {
+    header {
+        height: 20rem;
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em red;
+        background-image: url('../OmatKuvat/turn-1336786__480.jpg');
+        opacity: 0.8;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        font-family: 'Merienda', cursive;
+        color: ghostwhite;
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-fluid {
+        width:100%;
+        max-width: 300px;
+        height: auto;
+        padding-top: 1.7rem;
+        padding-left:1.7rem;
+        float: left;
+    }
+}
+
+#wrapper {
+    margin-top: 2rem;
+}
+
+footer{
+    text-align: center;
+}
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    border: groove 1px black;
+    padding-top:0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content:space-around;
+    }
+
+    .flex-container > div {
+        
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+.textWrapLeft {
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+}
+
+.textWrapRight {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
