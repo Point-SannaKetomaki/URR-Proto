@@ -18,5 +18,14 @@ namespace URR_Proto.Controllers
         {
             return View();
         }
+        public ActionResult Hautamuistomerkki()
+        {
+            return View();
+        }
+
+        public ActionResult Kaukoreiki()
+        {
+            return View();
+        }
     }
 }

@@ -1,14 +1,27 @@
 ﻿@{
-    ViewBag.Title = "Index"; 
+    ViewBag.Title = "Index";
 }
 
 <!-- Reiki - yleistä -->
-<div id="wrapper">
-
+<div class="container" id="wrapper">
     <div>
-        <h1>Reiki</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="~/Home/Index">Etusivu</a></li>
+                <li class="breadcrumb-item">Reiki</li>
+                <li class="breadcrumb-item active" aria-current="page">Yleistä</li>
+            </ol>
+        </nav>
+    </div>
 
-        <p>
+    <section>
+        <h1 id="alku">Reiki</h1>
+
+        <figure class="textWrapLeft" style="padding-left:20px;">
+            <img src="~/OmatKuvat/kanji007.gif" alt="Reiki kanjimerkein" style="max-width:100%" />
+            <figcaption class="text-center">Reiki kanjimerkein</figcaption>
+        </figure>
+        <p style="margin-top:50px;">
             Reiki on japanilaisen Mikao Usuin (1865 - 1926) kehittämä hoitomuoto ja henkisen kehityksen tie,
             joka on siirrettävissä ihmiseltä toiselle. Sen perusteiden oppiminen on helppoa ja käyttö yksinkertaista.
             Reikihoidossa hoitaja toimii energiakanavana niin, ettei hän luovuta omaa energiaansa,
@@ -17,7 +30,7 @@
 
         <p>
             Hoitojen lisäksi reiki on myös suurempi kokonaisuus, elämäntapa, joka pitää sisällään monta eri osa-aluetta:
-            <div>
+            <div style="padding-left:180px">
                 <ul>
                     <li>henkisen harjoittelun</li>
                     <li>hoitotekniikat</li>
@@ -30,9 +43,111 @@
             Yhdessä nämä muodostavat reikin tien (do), jota kulkemalla ihmiset voivat auttaa itseään ja maailmaa.
             Sana reiki muodostuu sanoista rei, eli henki ja ki, eli elämän energia tai elämän voima.
         </p>
+    </section>
+    <br />
+   
+   
+    
+    <figure class="textWrapRight">
+        <img src="~/OmatKuvat/Hoito.jpg" class="rounded-circle d-block" alt="Hoitotilanne, asiakas makaa hoitopöydällä." style="max-width:100%" />
+        <figcaption class="text-center">Rauhallinen ja keskittynyt hoitotilanne</figcaption>
+    </figure>
+
+    <section>
+        <h3>Yksinkertainen perinteinen hoitotapa</h3>
+        <p>
+            Reikin avulla kuka tahansa voi oppia hoitamaan itseään ja halutessaan muitakin.
+            Reikiä käytetään joka puolella maailmaa ja kaikilla mantereilla uskonnosta, politiikasta tai kansallisuudesta riippumatta.
+            Reikillä ei ole mitään tekemistä uskontojen tai politiikan kanssa, vaan reiki perustuu antamiseen ja jakamiseen.
+            Reiki on rakkautta ja universaalin elämänvoiman välittämistä.
+        </p>
+    </section>
+
+
+
+    <section>
+        <h3>Kaikille ihmisille</h3>
+        <p>
+            Reiki on tarkoitettu jaettavaksi ja annettavaksi kaikkien halukkaiden käyttöön.
+            Hoitamalla itseään ja tekemällä reikin henkisiä harjoituksia säännöllisesti,
+            oppii löytämään omasta itsestään uutta voimaa ja harmoniaa.
+            Kun reikiä käyttää säännöllisesti ja sen vaikutukseen tutustuu, myös toisten hoitaminen alkaa tuntua yhä luonnollisemmalta.
+        </p>
+    </section>
+
+    <section>
+        <h3>Itsetuntemusta</h3>
+        <p>
+            Reikin perusteisiin liittyy itsehoito, jonka positiivinen vaikutus on kaikkien helppo huomata.
+            Kun reikiä opiskellaan, oppilaille neuvotaan myös säännöllinen hiljentyminen Mikao Usuin opettaman meditaation avulla.
+            Se rentouttaa ja tasapainottaa, auttaa voimaan hyvin ja jaksamaan. Säännöllinen hiljentyminen kehittää myös itsetuntemusta,
+            ja helpottaa tunteiden käsittelyä ja hallintaa: stressi vähenee ja jo pelkästään sillä on tervehdyttävä vaikutus ihmiseen.
+            Meditaation on tänä päivänä tutkitusti todettu myötävaikuttavan erittäin positiivisesti ihmisen hyvinvointiin.
+        </p>
+    </section>
+
+    <section>
+        <h3>Auttajien kouluttamista</h3>
+        <p>
+            Alusta alkaen oli selvää, että Usuin reiki on tarkoitettu opetettavaksi eteenpäin.
+            1920-luvun Japanissa Mikao Usui opetti reikiä miehille ja naisille yhtä lailla.
+            Mikao Usuin reikissä on kolme koulutustasoa:
+        </p>
+
+        <div id="lista">
+            <ol>
+                <li>ykköstaso eli shoden</li>
+                <li>kakkostaso eli okuden ja</li>
+                <li>opettajataso eli shinbiden.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section>
+        <h3>Opetettavissa ja siirrettävissä oleva energiahoitomenetelmä</h3>
+        <p>
+            Reiki voidaan antaa jokaisen käyttöön tekemällä reikiin liittyvät viritykset oikein ja oikeassa järjestyksessä.
+            Kun tämä reikin välittämiseen liittyvä kanava on avattu, se toimii koko elämän ajan eikä sitä kukaan tai mikään voi ottaa ihmiseltä pois.
+        </p>
+    </section>
+
+    <section>
+        <h3>Reikin vaikutukset</h3>
+        <p>
+            Reiki herkistää kykyämme kuunnella sisäisen intuition ääntä, joka auttaa sairauksien ja vaikeuksien olemuksen ymmärtämistä
+            ja syiden tiedostamista. Monet ovat kuvanneet tätä herkistymistä elämänilon ja harmonian tai luovuuden lisääntymisenä.
+            Reikihoidon aikana koettu syvä rentous laukaisee stressiä ja avaa energiatukkeumia.
+            Näin ihmisen omat paranemisprosessit nopeutuvat, kivut ja säryt voivat helpottua ja omat voimavarat lisääntyä.
+        </p>
+    </section>
+
+    <section>
+        <h3>Kenelle reikihoito sopii</h3>
+        <p>
+            Reikihoito on hyvin lempeä hoitomuoto, joka sopii kaikille ja kaikenlaisiin elämäntilanteisiin.
+            Hoidettavan keho ottaa vastaan hoitajan kautta välittyvää energiaa juuri sen verran kuin se tarvitsee
+            ja siinä tilanteessa pystyy vastaanottamaan.
+        </p>
+    </section>
+
+
+
+    <section>
+        <h3>Perinteikäs menetelmä</h3>
+        <p>
+            Reiki on arvokas lahja ihmiskunnalle. Sitä käyttäessä voi ymmärtää sen voiman ja tehokkuuden.
+            Jotta kaikki se hyvä, mikä Mikao Usuin opettamaan reikiin liittyy, saadaan säilymään ja siirtymään selkeänä eteenpäin,
+            on tärkeää, että perinne säilyy alkuperäisessä muodossaan.
+            Selvyyden vuoksi reiki-nimitys pitää liittää vain alkuperäiseen Mikao Usuin hoitomenetelmään ja traditioon:
+            muistaa että muut energiahoidot ovat asia erikseen.
+        </p>
+    </section>
+
+    <div x-class="d-flex justify-content-center">
+        <figure>
+            <img src="~/OmatKuvat/bambu10.gif" class="mx-auto d-block" alt="Keisari Meijin mietelause ja piirros bambusta" style="max-width:80%;" />
+        </figure>
     </div>
+    <p><a class="btn btn-outline-primary" href="#alku">Takaisin sivun alkuun</a></p>
 
-
-
-
-</div> <!-- wrapper -->
+</div> <!-- container -->

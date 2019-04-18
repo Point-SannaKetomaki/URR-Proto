@@ -3,38 +3,42 @@
     ViewBag.Title = "Historia";
 }
 
-<div id="wrapper">
+<div class="container" id="wrapper">
 
-
-
+    <div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="~/Home/Index">Etusivu</a></li>
+                <li class="breadcrumb-item">Reiki</li>
+                <li class="breadcrumb-item active" aria-current="page">Historia</li>
+            </ol>
+        </nav>
+    </div>
 
     <h1 id="alku">Reikin historiaa</h1>
 
-    <div id="SivuNavi">
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link" href="#synty">Reikin synty</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#opetus">Opetustyö alkaa</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#tunnettu">Reikistä ja Usuista tulee Japanissa tunnettuja</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#länsimainen">Länsimainen reiki</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#reikiSuomeen">Reiki Suomeen</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#alkulähteille">Takaisin alkulähteille</a>
-            </li>
 
-        </ul>
-    </div>
-    <section>
+    <nav class="nav nav-pills nav-justified flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link active" href="#synty">Reikin synty</a>
+        <a class="flex-sm-fill text-sm-center nav-link active" href="#opetus">Opetustyö alkaa</a>
+        <a class="flex-sm-fill text-sm-center nav-link active" href="#tunnettu">Tunnettuus lisääntyy</a>
+        <a class="flex-sm-fill text-sm-center nav-link active" href="#länsimainen">Länsimainen reiki</a>
+        <a class="flex-sm-fill text-sm-center nav-link active" href="#reikiSuomeen">Reiki Suomeen</a>
+        <a class="flex-sm-fill text-sm-center nav-link active" href="#alkulähteille">Takaisin alkulähteille</a>
+
+    </nav>
+
+
+    <section style="margin-top:20px;">
+
+        
         <h3 id="synty">Reikin synty</h3>
+
+        <figure class="textWrapLeft" style="padding-left:20px;">
+            <img src="~/OmatKuvat/Mikao-Usui.jpg" alt="Mikao Usui" style="max-width:100%;" />
+            <figcaption>Mikao Usui</figcaption>
+        </figure>
+        
         <p>
             Reikin löysi ja sitä opetti ensimmäisenä japanilainen mies nimeltä Mikao Usui.
             Hän syntyi Taniai Muran kylässä Gifun läänissä vuonna 1865.
@@ -59,7 +63,7 @@
             Reiki oli sensei (jap. opettaja) Mikao Usuin oma persoonallinen tyyli, jossa kohtaavat kaikki Usuin aiemmin
             opiskelemat taidot.
         </p>
-        <p><a href="#alku">Takaisin sivun alkuun</a></p>
+
     </section>
 
     <section>
@@ -80,11 +84,11 @@
         </p>
 
         <figure class="textWrapRight">
-            <img src="~/OmatKuvat/usuin_ryhma.jpg" style="max-width:80%" />
+            <img src="~/OmatKuvat/usuin_ryhma.jpg" alt="Ryhmäkuva Usuin oppilaista" style="max-width:80%" />
             <figcaption>Usuin oppilaina oli sekä miehiä että naisia.</figcaption>
         </figure>
 
-        <div>
+        <div id="lista">
             <ul>
                 <li>henkisiä harjoituksia</li>
                 <li>meditaatiota</li>
@@ -102,7 +106,7 @@
         </p>
 
 
-        <div>
+        <div id="lista">
             <ol>
                 <li>ykköstaso eli shoden</li>
                 <li>kakkostaso eli okuden</li>
@@ -111,15 +115,15 @@
         </div>
 
 
-        <p><a href="#alku">Takaisin sivun alkuun</a></p>
+
 
     </section>
 
     <section>
         <h3 id="tunnettu">Reikistä ja Usuista tulee Japanissa tunnettuja</h3>
 
-        <figure class="textWrapLeft">
-            <img src="~/OmatKuvat/maanjaristys.jpg" style="max-width:100%" />
+        <figure class="textWrapLeft" style="padding-left:20px;">
+            <img src="~/OmatKuvat/maanjaristys.jpg" alt="Tokio maanjäristyksen jälkeen vuonna 1923" style="max-width:100%" />
             <figcaption>Tokio maanjäristyksen jälkeen v.1923</figcaption>
         </figure>
 
@@ -150,7 +154,7 @@
             joka sijaitsee Usuin haudan vieressä. Linkki muistokirjoitukseen
 
         </p>
-        <p><a href="#alku">Takaisin sivun alkuun</a></p>
+
     </section>
 
 
@@ -168,10 +172,10 @@
             Hawayo Takata opetti reikin opettaja-asteen 22 henkilölle 1970-luvun kuluessa.
             Länsimaihin reiki saapui Takatan tuomana ja sisältäen ainoastaan muutamia osia Usuin reikin alkuperäisistä henkisistä harjoituksista
             ja hoitotekniikoista. Takatan kuoleman jälkeen syntyi länsimaiseen reikiin henkinen ja opillinen tyhjiö.
-            Lisäksi alkoi reikiin kehittyä kolmenlaisia näkemyksiä:
+            Lisäksi reikiin alkoi kehittyä kolmenlaisia näkemyksiä:
         </p>
 
-        <div>
+        <div id="lista">
             <ol>
                 <li>Yksi uusi ilmiö oli, että jotkut länsimaiset muuttivat reikiä omien näkemystensä mukaiseksi opetukseltaan ja hoitotavoiltaan.</li>
                 <li>
@@ -185,7 +189,7 @@
                 </li>
             </ol>
         </div>
-        <p><a href="#alku">Takaisin sivun alkuun</a></p>
+
     </section>
 
     <section>
@@ -198,7 +202,7 @@
             jota suomalainen reiki saa paljolti kiittää reikin nykyisestä levinneisyydestä maassamme.
             Tällä hetkellä maassamme on kymmeniätuhansia reikin harjoittajia.
         </p>
-        <p><a href="#alku">Takaisin sivun alkuun</a></p>
+
     </section>
 
     <section>
@@ -216,7 +220,16 @@
             Usui Reiki Ryoho ry on suomalainen reikiyhteisö, joka toiminnallaan sekä opetuksellaan tuo Suomessa esiin Japanista
             tuotuja alkuperäisen Usuin reikin kaikkia eri keinoja itsehoitoa, muiden hoitoa ja henkistä harjoittelua varten.
         </p>
-        <p><a href="#alku">Takaisin sivun alkuun</a></p>
+    </section>
+    <section>
+        <h3 id="muistomerkki">Mikao Usuin hautamuistomerkki</h3>
+        <p>
+            Jodo shu Saihojin temppelissä hautausmaalta Tokiossa
+            sijaitsee sensei Usuin hautamuistomerkki. <a href="~/Reiki/Hautamuistomerkki"><abbr title="Sensei Usuin hautamuistomerkki">Lue, mitä siinä kirjoitetaan.</abbr></a>
+        </p>
+        </section>
+    <section>
+        <a class="btn btn-outline-primary" href="#alku">Takaisin sivun alkuun</a>
     </section>
 </div>
 

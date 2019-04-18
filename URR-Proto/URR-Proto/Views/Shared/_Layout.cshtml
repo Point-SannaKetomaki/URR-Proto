@@ -13,33 +13,46 @@
 
 </head>
 <body>
-    <header id="header">
-            <img id="logoväri" src="~/OmatKuvat/URR logo-varit-tausta-pakattu.jpg" class="img-fluid"  />
-        <p style="padding-top:5rem;">Usui Reiki Ryoho ry</p>
-    </header>
-    <nav class="navbar navbar-expand-sm">
-        <!-- Tämä rivi tarvitaan, jotta nav-bar toimii !!!! -->
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="~/Home/Index">Etusivu</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Reiki</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="~/Reiki/Index">Yleistä</a>
-                    <a class="dropdown-item" href="~/Reiki/Historia">Historia</a>
-                    <a class="dropdown-item" href="#">Link 3</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="top-container">
+        <header class="header" id="myHeader">
+            <img id="logoväri" src="~/OmatKuvat/URR logo-varit-tausta-pakattu.jpg" class="img-fluid" />
+            <p style="padding-top:5rem;">Usui Reiki Ryoho ry</p>
+        </header>
+        <nav class="navbar navbar-expand-sm">
+            <!-- Tämä rivi tarvitaan, jotta nav-bar toimii !!!! -->
+            <ul class="nav nav-tabs">
 
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Aktiivinen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="~/Home/Index">Etusivu</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Reiki</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="~/Reiki/Index">Yleistä</a>
+                        <a class="dropdown-item" href="~/Reiki/Historia">Historia</a>
+                        <a class="dropdown-item" href="~/Reiki/Hautamuistomerkki" style="color:dimgray">&nbsp;-&nbsp;Muistokirjoitus</a>
+                        <a class="dropdown-item" href="~/Reiki/Kaukoreiki">Kaukoreiki</a>
+                        <a class="dropdown-item" href="#">Otsikko</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Tapahtumat</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="~/Tapahtumat/Index">Kuvakarusellitesti</a>
+                        <a class="dropdown-item" href="#">Otsikko</a>
+                        <a class="dropdown-item" href="#">Otsikko</a>
+                        <a class="dropdown-item" href="#">Otsikko</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="~/Info/Index">Tietoa tästä protosivusta</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <div class="container body-content">
         @RenderBody()
@@ -51,6 +64,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @*<script src="~/OmatScriptit/PageConfigurations.js"></script>*@
     @RenderSection("scripts", required: false)
 </body>
 </html>

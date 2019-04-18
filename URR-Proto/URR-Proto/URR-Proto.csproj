@@ -115,7 +115,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InfoController.cs" />
+    <Compile Include="Controllers\KurssitHoidotController.cs" />
     <Compile Include="Controllers\ReikiController.cs" />
+    <Compile Include="Controllers\TapahtumatController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -131,15 +134,25 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="OmatKuvat\bambu10.gif" />
+    <Content Include="OmatKuvat\carouseldemo\aurora-1197753_1280.jpg" />
+    <Content Include="OmatKuvat\carouseldemo\bird-1045954_1280.jpg" />
+    <Content Include="OmatKuvat\carouseldemo\butterfly-1127666_1280.jpg" />
+    <Content Include="OmatKuvat\carouseldemo\fall-1072821_1280.jpg" />
+    <Content Include="OmatKuvat\carouseldemo\the-road-815297_1280.jpg" />
     <Content Include="OmatKuvat\etu-kadet2.jpg" />
     <Content Include="OmatKuvat\etu-meditaatio2.jpg" />
+    <Content Include="OmatKuvat\Hoito.JPG" />
+    <Content Include="OmatKuvat\kanji007.gif" />
     <Content Include="OmatKuvat\maanjaristys.jpg" />
     <Content Include="OmatKuvat\Mikao-Usui.jpg" />
+    <Content Include="OmatKuvat\Muistomerkki.jpg" />
     <Content Include="OmatKuvat\turn-1336786__480.jpg" />
     <Content Include="OmatKuvat\URR logo-varit-tausta-pakattu.jpg" />
     <Content Include="OmatKuvat\usuin_ryhma.jpg" />
     <Content Include="OmatMuotoilut\Etusivu.css" />
     <Content Include="OmatMuotoilut\Perusmuotoilu.css" />
+    <Content Include="OmatScriptit\PageConfigurations.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -162,6 +175,9 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
+    <None Include="Properties\PublishProfiles\URR-Proto - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\URR-Proto-FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\URR-Proto_FileTransfer.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -206,6 +222,11 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Reiki\Index.cshtml" />
     <Content Include="Views\Reiki\Historia.cshtml" />
+    <Content Include="Views\Reiki\Kaukoreiki.cshtml" />
+    <Content Include="Views\KurssitHoidot\Index.cshtml" />
+    <Content Include="Views\Reiki\Hautamuistomerkki.cshtml" />
+    <Content Include="Views\Tapahtumat\Index.cshtml" />
+    <Content Include="Views\Info\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
